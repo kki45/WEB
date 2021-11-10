@@ -9,4 +9,15 @@
     2) 작성한 코드를 Context Path단위로 서버에 배포. 이때 서버는 WebApps라는 최상단 폴더 하위에 배포
     3) 서버에 배포된 파일을 브라우저로 요청
     4) 응답결과를 다시 브라우저로 띄워줌.
+
+- CGI : 서버상에서 실행되는 모든 프로그램 -- ASP, PHP, Servlet(JAVA기반서버)
+
+- src : class path system...package system..소스코드가 저장됨..동적인문서...서블릿...D.D
+
+- WebContent : file path system...html, jsp, css....파일저장...정적인문서...html, jsp, css, 미디어파일..S.D
    
+### 정리
+1. 클라이언트는 브라우저기반이다.
+2. 어떤 값이 들어오는데에 따라서 결과값이 다르게 뱉어내는게 프로그램이다 --> dynamic document(D.D)
+3. 어떤 값이 들어오던 결과값이 같게 나오는 것은 static doucment(S.D)이다.
+4. 
