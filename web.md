@@ -21,3 +21,36 @@
 2. 어떤 값이 들어오는데에 따라서 결과값이 다르게 뱉어내는게 프로그램이다 --> dynamic document(D.D)
 3. 어떤 값이 들어오던 결과값이 같게 나오는 것은 static doucment(S.D)이다.
 4. 
+
+- form 태그 
+	1. 다양한 입력양식 폼을 하나로 묶는 역할을 한다.
+	2. 크게 2가지 속성이 있다.
+	   필수 속성은 action 으로 연결된 서버상의 페이지(S.D / D.D)를 지정한다.   
+	  Optional한 속성으로 method가 있다....값으로 GET/POST방식으로 나뉜다...둘중 하나사용한다
+  디폴트는 get방식이다. get방식을 사용하면 서블릿의 doGet()메소드로 돌아간다...get방식은 key,value...
+   
+ ### WAS(Server)가 하는일
+ 1. 서버가 start되면 D.D(Dynamic Document)파일을 읽어들인다.
+ 2.  servlet생성한다 -> 생성자가 호출된다.
+ 3.  클라이언트가 요청을 하면 요청정보를 바탕으로 request,response,thread객체를 생성한다.
+ 4.  service()메소드를 호출한뒤 클라이언트에 요청을 처리하기 위해 doGet() or doPost()를 재호출한다...이때 위에서 생성한
+       request, response가 인자값으로 passinginto(투입)되어진다.
+ 5. doGet() or doPost()를 실행시킨다.(동작시킨다)
+ 6. request, response, thread가 Death된다.
+   
+   --> 1,2번은 ready-on-state작업이다... 단, 한번만 일어난다.
+   
+   --> 3,4,5,6번은 반복된다...repeat
+
+
+
+
+
+
+
+
+
+
+
+
+ 
