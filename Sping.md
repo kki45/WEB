@@ -45,6 +45,18 @@
 7. BeanFactort는 src를 인식하지 못해서 .src부터 적어줘야하고 ApplicationContext는 src를 기본적으로 장착하고 있어서 src를 넣으면 중복되기 때문에 빼야한다.
 
 
+# MyBatis Framework
+- XML MetaData
+1. SqlMapConfig.xml :: MyBatis Framework의 핵심 환경설정 파일(MetaData)
+2. mybatis-userservice-mapping.xml : SQL를 갖는 설정파일(MetaData)
+
+- MyBatis Framework의 장점
+1. 작고 간단하다.(다른 라이브러리와 의존관계 없다)
+2. 기존 애플리케이션/데이터베이스 변경이 불필요하다.
+3. 생산성/성능/작업의 분배(소스코드와 SQL의 분리)
+4. 관심사의 분리(비즈니스객체만 가지고 작업가능하다)
+5. JDBC절차를 간결과한 lib이다.
+
 
 
 
